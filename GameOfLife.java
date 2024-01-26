@@ -130,6 +130,7 @@ public class GameOfLife {
 	// Assumes that j is at least 1 and at most the number of columns in the board - 1. 
 	public static int count(int[][] board, int i, int j) {
 		int count = 0;
+		// this is good, but why do not use for?
 		if (board[i - 1][j - 1] == 1) //top left corner
 			count++;
 		if (board[i - 1][j] == 1) //top
